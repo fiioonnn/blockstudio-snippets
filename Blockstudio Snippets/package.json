@@ -1,0 +1,32 @@
+{
+	"name": "blockstudio-snippets",
+	"displayName": "Blockstudio Snippets",
+	"version": "1.0.0",
+	"description": "Blockstudio Snippets",
+	"icon": "images/icon.jpg",
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"publisher": "fiioonnn",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"vsc",
+		"blockstudio",
+		"snippets"
+	],
+	"author": "fiioonnn",
+	"license": "ISC",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "json",
+				"path": "./snippets/bs.json"
+			}
+		]
+	}
+}

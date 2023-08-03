@@ -1,0 +1,148 @@
+{
+	"Text Field": {
+		"prefix": "bs.text",
+		"body": [
+			"{",
+			"    \"id\": \"${1:text}\",",
+			"    \"type\": \"text\",",
+			"    \"label\": \"${1:Text}\"",
+			"}"
+		],
+		"description": "Renders a single line text input."
+	},
+	"Number Field": {
+		"prefix": "bs.number",
+		"body": [
+			"{",
+			"    \"id\": \"${1:number}\",",
+			"    \"type\": \"number\",",
+			"    \"label\": \"${2:Number}\"",
+			"}"
+		],
+		"description": "Renders a number input"
+	},
+	"Checkbox Field": {
+		"prefix": "bs.checkbox",
+		"body": [
+			"{",
+			"    \"id\": \"${1:checkbox}\",",
+			"    \"type\": \"checkbox\",",
+			"    \"label\": \"${2:Checkbox}\",",
+			"    \"options\": [",
+			"        {",
+			"            \"value\": \"option-1\",",
+			"            \"label\": \"Option 1\"",
+			"        },",
+			"        {",
+			"            \"value\": \"option-2\",",
+			"            \"label\": \"Option 2\"",
+			"        }",
+			"    ]",
+			"}"
+		],
+		"description": "Renders a set of checkbox inputs."
+	},
+	"WYSIWYG Field": {
+		"prefix": "bs.wysiwyg",
+		"body": [
+			"{",
+			"    \"id\": \"${1:wysiwyg}\",",
+			"    \"type\": \"wysiwyg\",",
+			"    \"label\": \"${2:wysiwyg}\",",
+			"    \"toolbar\": {",
+			"        \"tags\": {",
+			"            \"headings\": [",
+			"                1,",
+			"                2,",
+			"                3,",
+			"                4,",
+			"                5,",
+			"                6",
+			"            ]",
+			"        },",
+			"        \"formats\": {",
+			"            \"bold\": true,",
+			"            \"italic\": true,",
+			"            \"underline\": true,",
+			"            \"strikethrough\": true,",
+			"            \"code\": true,",
+			"            \"orderedList\": true,",
+			"            \"unorderedList\": true,",
+			"            \"link\": {",
+			"                \"opensInNewTab\": true,",
+			"                \"attributes\": {",
+			"                    \"rel\": \"nofollow\"",
+			"                }",
+			"            }",
+			"        }",
+			"    }",
+			"}"
+		],
+		"description": "Renders a WYSIWYG editor."
+	},
+	"Link Field": {
+		"prefix": "bs.link",
+		"body": [
+			"{",
+			"    \"id\": \"${1:link}\",",
+			"    \"type\": \"link\",",
+			"    \"label\": \"${2:Link}\"",
+			"}"
+		],
+		"description": "Renders a link control to choose internal or external links."
+	},
+	"Conditions": {
+		"prefix": "bs.conditions",
+		"body": ["\"conditions\": [", " \t[$1]", "]"],
+		"description": "Creates the conditions property."
+	},
+	"Condition.": {
+		"prefix": "bs.condition",
+		"body": [
+			"{",
+			"  \"${1|id,type|}\": \"$2\",",
+			"  \"operator\": \"${3|==,!=,includes,!includes,empty,!empty,<,>,<=,>=|}\",",
+			"  \"value\": \"$4\"",
+			"}"
+		],
+		"description": "Creates a condition."
+	},
+	"Files Field": {
+		"prefix": "bs.files",
+		"body": [
+			"{",
+			"    \"id\": \"${1:files}\",",
+			"    \"type\": \"files\",",
+			"    \"label\": \"${2:Files}\",",
+			"    \"multiple\": ${3|true,false|},",
+			"}"
+		],
+		"description": "Renders a button to the media library. Picked items can be reordered inline."
+	},
+	"Group Field.": {
+		"prefix": "bs.group",
+		"body": [
+			"{",
+			"    \"id\": \"${1:group}\",",
+			"    \"type\": \"group\",",
+			"    \"title\": \"${2:Group}\",",
+			"    \"initialOpen\": ${3|true,false|},",
+			"    \"attributes\": [",
+			"        $4",
+			"    ]",
+			"}"
+		],
+		"description": "Renders multiple fields in an (optionally) collapsible container."
+	},
+	"Link Field.": {
+		"prefix": "bs.link",
+		"body": [
+			"{",
+			"    \"id\": \"${1:link}\",",
+			"    \"type\": \"link\",",
+			"    \"label\": \"${2:Link}\"",
+			"}"
+		],
+		"description": "Renders a link control to choose internal or external links."
+	}
+}
