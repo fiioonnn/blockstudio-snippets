@@ -144,5 +144,26 @@
 			"}"
 		],
 		"description": "Renders a link control to choose internal or external links."
+	},
+	"Select Field.": {
+		"prefix": "bs.select",
+		"body": [
+			"{",
+			"  \"id\": \"${1:select}\",",
+			"  \"type\": \"select\",",
+			"  \"label\": \"${2:Select}\",",
+			"  \"options\": [",
+			"    {",
+			"      \"value\": \"${3:option-1}\",",
+			"      \"label\": \"${4:Option 1}\"",
+			"    },",
+			"    {",
+			"      \"value\": \"${5:option-2}\",",
+			"      \"label\": \"${6:Option 2}\"",
+			"    }",
+			"  ]",
+			"}"
+		],
+		"description": "Renders a select input with support for single or multiple selections."
 	}
 }

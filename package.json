@@ -4,10 +4,12 @@
 	"version": "1.0.0",
 	"description": "Blockstudio Snippets",
 	"icon": "images/icon.jpg",
+	"repository": "https://github.com/fiioonnn/blockstudio-snippets.git",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
 	"publisher": "fiioonnn",
+	"pricing": "Free",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},

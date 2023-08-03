@@ -1,16 +1,10 @@
 # Blockstudio Snippets
 
-## Features
+## Images
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-![Preview](images/screenshot1.png)
+![Preview](https://raw.githubusercontent.com/fiioonnn/blockstudio-snippets/main/images/screenshot1.png)
 
 ## Release Notes
-
-Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
@@ -25,6 +19,6 @@ So the shortcode will look like this: `bs.text`.
 
 ## For more information, bug reports or feature requests
 
-- [Github](https://github.com/fiioonnn/bss)
+- [Github](https://github.com/fiioonnn/blockstudio-snippets)
 
 **Have fun!**
