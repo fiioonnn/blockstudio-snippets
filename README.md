@@ -17,6 +17,11 @@ Blockstudio Snippets is a extension to easily insert json blocks into your `bloc
 To use this extension, navigate to a json file and type the shortcode prefix `bs.` followed by the field type.
 So the shortcode will look like this: `bs.text`.
 
+## Planned features
+
+- Dynamically generate snippets by using the blockstudio schema.
+- Adding an Input for the Schema-URL in the settings of VSC
+
 ## For more information, bug reports or feature requests
 
 [Github](https://github.com/fiioonnn/blockstudio-snippets)
