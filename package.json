@@ -1,7 +1,7 @@
 {
 	"name": "blockstudio-snippets",
 	"displayName": "Blockstudio Snippets",
-	"version": "1.0.1",
+	"version": "1.0.0",
 	"description": "Blockstudio Snippets for Visual Studio Code.",
 	"icon": "images/icon.jpg",
 	"repository": "https://github.com/fiioonnn/blockstudio-snippets.git",
