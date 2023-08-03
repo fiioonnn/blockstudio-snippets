@@ -128,17 +128,6 @@
 		],
 		"description": "Renders a WYSIWYG editor."
 	},
-	"Link Field": {
-		"prefix": "bs.link",
-		"body": [
-			"{",
-			"    \"id\": \"${1:link}\",",
-			"    \"type\": \"link\",",
-			"    \"label\": \"${2:Link}\"",
-			"}"
-		],
-		"description": "Renders a link control to choose internal or external links."
-	},
 	"Conditions": {
 		"prefix": "bs.conditions",
 		"body": ["\"conditions\": [", " \t[$1]", "]"],
