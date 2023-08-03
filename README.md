@@ -21,6 +21,8 @@ So the shortcode will look like this: `bs.text`.
 
 - Dynamically generate snippets by using the blockstudio schema.
 - Adding an Input for the Schema-URL in the settings of VSC
+- Generate the `.php` block file based on the `block.json`
+- Add support for commands in VSC
 
 ## For more information, bug reports or feature requests
 
