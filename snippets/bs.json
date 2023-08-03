@@ -1,4 +1,52 @@
 {
+	"Block.": {
+		"prefix": "bs.block",
+		"body": [
+			"{",
+			"  \"$schema\": \"https://app.blockstudio.dev/schema\",",
+			"  \"name\": \"blockstudio/$1\",",
+			"  \"title\": \"${2:Blockname}\",",
+			"  \"category\": \"${3:text}\",",
+			"  \"icon\": \"${4|admin-site,align-center,align-left,align-none,align-right,analytics,archive,arrow-down,arrow-down-alt,arrow-down-alt2,arrow-left,arrow-left-alt,arrow-left-alt2,arrow-right,arrow-right-alt,arrow-right-alt2,arrow-up,arrow-up-alt,arrow-up-alt2,art,awards,backup,book,book-alt,book-alt2,building,businessman,calendar,camera,carrot,category,chart-area,chart-bar,chart-line,chart-pie,clipboard,clock,cloud,cloud-saved,cloud-upload,cloudy,dashboard,desktop,dismiss,download,edit,ellipsis,email,exerpt-view,external,facebook,facebook-alt,feedback,flag,format-aside,format-audio,format-chat,format-gallery,format-image,format-links,format-quote,format-status,format-video,forms,googleplus,grid-view,groups,heart,help,hidden,images-alt,images-alt2,info,instagram,key,layout,leftright,lightbulb,list-view,location,location-alt,location-alt2,lock,marker,media-archive,media-audio,media-code,media-default,media-document,media-interactive,media-spreadsheet,media-text,media-video,megaphone,menu,menu-alt,menu-alt2,microphone,migrate,minus,money,move,nametag,networking,no,no-alt,palmtree,paperclip,performance,phone,playlist-audio,playlist-video,plus,portfolio,post-status,post-trash,pressthis,products,randomize,redo,share,shield,share-alt,share-alt2,slides,smartphone,smiley,sort,sort-down,sort-up,sos,star-filled,star-half,star-outline,store,table-col-after,table-col-before,table-col-delete,table-row-after,table-row-before,table-row-delete,table,tablet,tag,tagcloud,testimonial,text,thumbs-down,thumbs-up,tickets-alt,tickets,tips,trash,twitter,undo,update,upload,vault,video-alt,video-alt2,video-alt3,visibility,welcome-add-page,welcome-comments,welcome-edit-page,welcome-learn-more,welcome-view-site,welcome-widgets-menus,wordpress,wordpress-alt,yes|}\",",
+			"  \"description\": \"${5:Blockstudio block.}\",",
+			"  \"keywords\": [",
+			"    $6",
+			"  ],",
+			"  \"version\": \"$7\",",
+			"  \"textdomain\": \"$8\",",
+			"  \"blockstudio\": {",
+			"    \"attributes\": [",
+			"      $9",
+			"    ]",
+			"  }",
+			"}"
+		],
+		"description": "Block boilerplate."
+	},
+	"Block (hph).": {
+		"prefix": "bs.block.hph",
+		"body": [
+			"{",
+			"  \"$schema\": \"https://app.blockstudio.dev/schema\",",
+			"  \"name\": \"blockstudio/$1\",",
+			"  \"title\": \"${2:Blockname}\",",
+			"  \"category\": \"${3:text}\",",
+			"  \"icon\": \"${4|admin-site,align-center,align-left,align-none,align-right,analytics,archive,arrow-down,arrow-down-alt,arrow-down-alt2,arrow-left,arrow-left-alt,arrow-left-alt2,arrow-right,arrow-right-alt,arrow-right-alt2,arrow-up,arrow-up-alt,arrow-up-alt2,art,awards,backup,book,book-alt,book-alt2,building,businessman,calendar,camera,carrot,category,chart-area,chart-bar,chart-line,chart-pie,clipboard,clock,cloud,cloud-saved,cloud-upload,cloudy,dashboard,desktop,dismiss,download,edit,ellipsis,email,exerpt-view,external,facebook,facebook-alt,feedback,flag,format-aside,format-audio,format-chat,format-gallery,format-image,format-links,format-quote,format-status,format-video,forms,googleplus,grid-view,groups,heart,help,hidden,images-alt,images-alt2,info,instagram,key,layout,leftright,lightbulb,list-view,location,location-alt,location-alt2,lock,marker,media-archive,media-audio,media-code,media-default,media-document,media-interactive,media-spreadsheet,media-text,media-video,megaphone,menu,menu-alt,menu-alt2,microphone,migrate,minus,money,move,nametag,networking,no,no-alt,palmtree,paperclip,performance,phone,playlist-audio,playlist-video,plus,portfolio,post-status,post-trash,pressthis,products,randomize,redo,share,shield,share-alt,share-alt2,slides,smartphone,smiley,sort,sort-down,sort-up,sos,star-filled,star-half,star-outline,store,table-col-after,table-col-before,table-col-delete,table-row-after,table-row-before,table-row-delete,table,tablet,tag,tagcloud,testimonial,text,thumbs-down,thumbs-up,tickets-alt,tickets,tips,trash,twitter,undo,update,upload,vault,video-alt,video-alt2,video-alt3,visibility,welcome-add-page,welcome-comments,welcome-edit-page,welcome-learn-more,welcome-view-site,welcome-widgets-menus,wordpress,wordpress-alt,yes|}\",",
+			"  \"description\": \"${5:Blockstudio block.}\",",
+			"  \"keywords\": [",
+			"    \"block\", \"hph\"",
+			"  ],",
+			"  \"version\": \"1.0.0\",",
+			"  \"textdomain\": \"hph\",",
+			"  \"blockstudio\": {",
+			"    \"attributes\": [",
+			"      $6",
+			"    ]",
+			"  }",
+			"}"
+		],
+		"description": "Block boilerplate for homepage-helden."
+	},
 	"Text Field": {
 		"prefix": "bs.text",
 		"body": [

@@ -1,16 +1,16 @@
 # Blockstudio Snippets
 
+Blockstudio Snippets is a extension to easily insert json blocks into your `block.json` instead of writing them by yourself everytime.
+
+[Blockstudio Documentation](https://blockstudio.dev/documentation/)
+
+[Blockstudio Creator](https://fabrikat.io/)
+
+> This Extension is not affiliated with fabrikat or blockstudio.
+
 ## Images
 
 ![Preview](https://raw.githubusercontent.com/fiioonnn/blockstudio-snippets/main/images/screenshot1.png)
-
-## Release Notes
-
-### 1.0.0
-
-Initial release of Blockstudio Snippets
-
----
 
 ## How to use
 
@@ -19,6 +19,6 @@ So the shortcode will look like this: `bs.text`.
 
 ## For more information, bug reports or feature requests
 
-- [Github](https://github.com/fiioonnn/blockstudio-snippets)
+[Github](https://github.com/fiioonnn/blockstudio-snippets)
 
 **Have fun!**
