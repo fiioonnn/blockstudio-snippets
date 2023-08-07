@@ -178,6 +178,7 @@
 			"    \"id\": \"${1:link}\",",
 			"    \"type\": \"link\",",
 			"    \"label\": \"${2:Link}\"",
+			"    \"opensInNewTab\": \"${3|true,false|}\"",
 			"}"
 		],
 		"description": "Renders a link control to choose internal or external links."
@@ -189,6 +190,7 @@
 			"  \"id\": \"${1:select}\",",
 			"  \"type\": \"select\",",
 			"  \"label\": \"${2:Select}\",",
+			"  \"multiple\": \"${3|true,false|}\",",
 			"  \"options\": [",
 			"    {",
 			"      \"value\": \"${3:option-1}\",",
