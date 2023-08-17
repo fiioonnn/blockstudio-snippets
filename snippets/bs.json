@@ -43,7 +43,7 @@
 			"      $6",
 			"    ]",
 			"  }",
-			"}"
+			"},"
 		],
 		"description": "Block boilerplate for homepage-helden."
 	},
@@ -53,8 +53,11 @@
 			"{",
 			"    \"id\": \"${1:text}\",",
 			"    \"type\": \"text\",",
-			"    \"label\": \"${1:Text}\"",
-			"}"
+			"    \"label\": \"${2:Text}\",",
+			"    \"default\": \"${3:Text}\",",
+			"    \"fallback\": \"${3:Text}\",",
+			"    \"placeholder\": \"${3:Text}\"",
+			"},"
 		],
 		"description": "Renders a single line text input."
 	},
@@ -64,8 +67,11 @@
 			"{",
 			"    \"id\": \"${1:number}\",",
 			"    \"type\": \"number\",",
-			"    \"label\": \"${2:Number}\"",
-			"}"
+			"    \"label\": \"${2:Number}\",",
+			"    \"default\": \"${3:Number}\",",
+			"    \"fallback\": \"${3:Number}\",",
+			"    \"placeholder\": \"${3:Number}\"",
+			"},"
 		],
 		"description": "Renders a number input"
 	},
@@ -86,7 +92,7 @@
 			"            \"label\": \"Option 2\"",
 			"        }",
 			"    ]",
-			"}"
+			"},"
 		],
 		"description": "Renders a set of checkbox inputs."
 	},
@@ -116,6 +122,14 @@
 			"            \"code\": true,",
 			"            \"orderedList\": true,",
 			"            \"unorderedList\": true,",
+			"            \"textAlign\": {",
+			"                \"alignments\": [",
+			"                    \"left\",",
+			"                    \"center\",",
+			"                    \"right\",",
+			"                    \"justify\"",
+			"                ]",
+			"            },",
 			"            \"link\": {",
 			"                \"opensInNewTab\": true,",
 			"                \"attributes\": {",
@@ -124,7 +138,7 @@
 			"            }",
 			"        }",
 			"    }",
-			"}"
+			"},"
 		],
 		"description": "Renders a WYSIWYG editor."
 	},
@@ -140,7 +154,7 @@
 			"  \"${1|id,type|}\": \"$2\",",
 			"  \"operator\": \"${3|==,!=,includes,!includes,empty,!empty,<,>,<=,>=|}\",",
 			"  \"value\": \"$4\"",
-			"}"
+			"},"
 		],
 		"description": "Creates a condition."
 	},
@@ -152,7 +166,9 @@
 			"    \"type\": \"files\",",
 			"    \"label\": \"${2:Files}\",",
 			"    \"multiple\": ${3|true,false|},",
-			"}"
+			"    \"returnFormat\": ${4|\"id\",\"url\",\"object\"|},",
+			"    \"allowedTypes\": ${5:[\"image/*\"]}",
+			"},"
 		],
 		"description": "Renders a button to the media library. Picked items can be reordered inline."
 	},
@@ -167,7 +183,7 @@
 			"    \"attributes\": [",
 			"        $4",
 			"    ]",
-			"}"
+			"},"
 		],
 		"description": "Renders multiple fields in an (optionally) collapsible container."
 	},
@@ -177,9 +193,9 @@
 			"{",
 			"    \"id\": \"${1:link}\",",
 			"    \"type\": \"link\",",
-			"    \"label\": \"${2:Link}\"",
+			"    \"label\": \"${2:Link}\",",
 			"    \"opensInNewTab\": \"${3|true,false|}\"",
-			"}"
+			"},"
 		],
 		"description": "Renders a link control to choose internal or external links."
 	},
@@ -191,17 +207,18 @@
 			"  \"type\": \"select\",",
 			"  \"label\": \"${2:Select}\",",
 			"  \"multiple\": \"${3|true,false|}\",",
+			"  \"allowNull\": \"${4|true,false|}\",",
 			"  \"options\": [",
 			"    {",
-			"      \"value\": \"${3:option-1}\",",
-			"      \"label\": \"${4:Option 1}\"",
+			"      \"value\": \"${5:option-1}\",",
+			"      \"label\": \"${6:Option 1}\"",
 			"    },",
 			"    {",
-			"      \"value\": \"${5:option-2}\",",
-			"      \"label\": \"${6:Option 2}\"",
+			"      \"value\": \"${7:option-2}\",",
+			"      \"label\": \"${8:Option 2}\"",
 			"    }",
 			"  ]",
-			"}"
+			"},"
 		],
 		"description": "Renders a select input with support for single or multiple selections."
 	},
@@ -211,8 +228,9 @@
 			"{",
 			"  \"id\": \"${1:toggle}\",",
 			"  \"type\": \"toggle\",",
-			"  \"label\": \"${1:Toggle}\"",
-			"}"
+			"  \"label\": \"${2:Toggle}\",",
+			"  \"default\": \"${3|true,false|}\"",
+			"},"
 		],
 		"description": "Renders a true/false toggle."
 	},
@@ -233,7 +251,7 @@
 			"            \"label\": \"${6:Option 2}\"",
 			"        }",
 			"    ]",
-			"}"
+			"},"
 		],
 		"description": "Renders a set of radio inputs."
 	},
@@ -244,7 +262,7 @@
 			"    \"id\": \"${1:icon}\",",
 			"    \"type\": \"icon\",",
 			"    \"label\": \"${2:Icon}\"",
-			"}"
+			"},"
 		],
 		"description": "Renders an SVG icon from an icon set."
 	},
@@ -259,7 +277,7 @@
 			"        \"${3:option-1}\",",
 			"        \"${4:option-2}\"",
 			"    ]",
-			"}"
+			"},"
 		],
 		"description": "Renders a field similar to the “to” field in Mail on OS X. Tokens can be entered by typing them or selecting them from a list of suggested tokens."
 	},
@@ -269,8 +287,11 @@
 			"{",
 			"    \"id\": \"${1:textarea}\",",
 			"    \"type\": \"textarea\",",
-			"    \"label\": \"${2:Textarea}\"",
-			"}"
+			"    \"label\": \"${2:Textarea}\",",
+			"    \"default\": \"${3:Textarea}\",",
+			"    \"fallback\": \"${3:Textarea}\",",
+			"    \"placeholder\": \"${3:Textarea}\"",
+			"},"
 		],
 		"description": "Renders a textarea input."
 	},
@@ -287,7 +308,7 @@
 			"    \"attributes\": [",
 			"        $6",
 			"    ]",
-			"}"
+			"},"
 		],
 		"description": "Renders a set of fields that can be repeated."
 	},
@@ -310,7 +331,7 @@
 			"            \"slug\": \"${8:white}\"",
 			"        }",
 			"    ]",
-			"}"
+			"},"
 		],
 		"description": "Renders a color palette and color picker."
 	},
@@ -321,7 +342,7 @@
 			"    \"id\": \"${1:date}\",",
 			"    \"type\": \"date\",",
 			"    \"label\": \"${2:Date}\"",
-			"}"
+			"},"
 		],
 		"description": "Renders a date picker."
 	},
@@ -338,7 +359,7 @@
 			"            ]",
 			"        }",
 			"    ]",
-			"}"
+			"},"
 		],
 		"description": "Renders a tabbed interface for grouping fields."
 	},
@@ -349,7 +370,7 @@
 			"    \"id\": \"${1:range}\",",
 			"    \"type\": \"range\",",
 			"    \"label\": \"${2:Radio}\"",
-			"}"
+			"},"
 		],
 		"description": "Renders a range input to set a numerical value between two points."
 	},
@@ -372,7 +393,7 @@
 			"            \"slug\": \"${8:moonlit-asteroid}\"",
 			"        }",
 			"    ]",
-			"}"
+			"},"
 		],
 		"description": "Renders a gradient palette and gradient picker."
 	},
@@ -383,8 +404,22 @@
 			"    \"id\": \"${1:datetime}\",",
 			"    \"type\": \"datetime\",",
 			"    \"label\": \"${2:Datetime}\"",
-			"}"
+			"},"
 		],
 		"description": "Renders a date and time picker."
+	},
+	"Populate Field": {
+		"prefix": "bs.populate",
+		"body": [
+			"\"populate\": {",
+			"    \"type\": \"query\",",
+			"    \"query\": \"${1:posts}\",",
+			"    \"arguments\": {",
+			"        \"post_type\": \"${2:jobs}\",",
+			"        \"numberposts\": \"${3:20}\"",
+			"    }",
+			"}"
+		],
+		"description": "Defines a population query."
 	}
 }

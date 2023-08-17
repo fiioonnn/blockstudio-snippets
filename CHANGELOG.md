@@ -34,3 +34,13 @@ Changelog of Blockstudio Snippets
 - Range
 - Gradient
 - Datetime
+
+## 1.0.4
+
+- Fixed tabindex of toggle and text field
+- Added textAlign property to bs.wysiwyg
+- Added trailing commas to the snippets for a faster workflow
+- Added default, fallback and placeholder property to inputs
+- Added default property to toggle
+- Added allowNull to select
+- Added population snippet (bs.populate)
