@@ -44,3 +44,10 @@ Changelog of Blockstudio Snippets
 - Added default property to toggle
 - Added allowNull to select
 - Added population snippet (bs.populate)
+
+## 1.0.5
+
+- Fixed allowNull and multiple properties on bs.select are strings instead of booleans
+- Fixed bs.toggle "default" property was a string instead of a boolean
+- Fixed bs.link "opensInNewTab" was a string instead of a boolean
+- Added "default" property to bs.select

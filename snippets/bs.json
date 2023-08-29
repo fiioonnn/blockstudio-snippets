@@ -194,7 +194,7 @@
 			"    \"id\": \"${1:link}\",",
 			"    \"type\": \"link\",",
 			"    \"label\": \"${2:Link}\",",
-			"    \"opensInNewTab\": \"${3|true,false|}\"",
+			"    \"opensInNewTab\": ${3|true,false|}",
 			"},"
 		],
 		"description": "Renders a link control to choose internal or external links."
@@ -206,16 +206,17 @@
 			"  \"id\": \"${1:select}\",",
 			"  \"type\": \"select\",",
 			"  \"label\": \"${2:Select}\",",
-			"  \"multiple\": \"${3|true,false|}\",",
-			"  \"allowNull\": \"${4|true,false|}\",",
+			"  \"multiple\": ${3|true,false|},",
+			"  \"allowNull\": ${4|true,false|},",
+			"  \"default\": \"${5:option-1}\",",
 			"  \"options\": [",
 			"    {",
-			"      \"value\": \"${5:option-1}\",",
-			"      \"label\": \"${6:Option 1}\"",
+			"      \"value\": \"${6:option-1}\",",
+			"      \"label\": \"${7:Option 1}\"",
 			"    },",
 			"    {",
-			"      \"value\": \"${7:option-2}\",",
-			"      \"label\": \"${8:Option 2}\"",
+			"      \"value\": \"${8:option-2}\",",
+			"      \"label\": \"${9:Option 2}\"",
 			"    }",
 			"  ]",
 			"},"
@@ -229,7 +230,7 @@
 			"  \"id\": \"${1:toggle}\",",
 			"  \"type\": \"toggle\",",
 			"  \"label\": \"${2:Toggle}\",",
-			"  \"default\": \"${3|true,false|}\"",
+			"  \"default\": ${3|true,false|}",
 			"},"
 		],
 		"description": "Renders a true/false toggle."
