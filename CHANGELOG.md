@@ -51,3 +51,8 @@ Changelog of Blockstudio Snippets
 - Fixed bs.toggle "default" property was a string instead of a boolean
 - Fixed bs.link "opensInNewTab" was a string instead of a boolean
 - Added "default" property to bs.select
+
+## 1.0.6
+
+- Fixed bs.number, default value were a string, now its a number.
+- Changed bs.block and bs.block.hph "category" property to be blank
