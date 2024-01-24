@@ -56,3 +56,9 @@ Changelog of Blockstudio Snippets
 
 - Fixed bs.number, default value were a string, now its a number.
 - Changed bs.block and bs.block.hph "category" property to be blank
+
+## 1.0.7
+
+- Removed "," from bs.block.hph snippet (caused error)
+- Changed category property on bs.block.hph for faster workflow
+- Added the new Unit field (bs.unit)
