@@ -445,6 +445,6 @@
 			"    ]",
 			"},"
 		],
-		"description": "Defines a population query."
+		"description": "Renders a number input with a unit dropdown."
 	}
 }
